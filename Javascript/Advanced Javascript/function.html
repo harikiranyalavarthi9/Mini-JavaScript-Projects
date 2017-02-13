@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced use of Functions</title>
+	<script type="text/javascript">
+		function check(a,b) {
+			if(b!=0) return true;
+			else return false;
+		}
+		function myDivide(fn,num,div) {
+			if(fn(num,div)) {
+				alert("It's OK!");
+				return num/div;
+			} else {
+				alert("Not OK!");
+			}
+		}
+		result=myDivide(check,44,1);
+		alert(result);
+	</script>
+</head>
+<body>
+</body>
+</html>

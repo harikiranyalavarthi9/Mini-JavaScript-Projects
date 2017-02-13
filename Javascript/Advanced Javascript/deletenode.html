@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Delete Node DOM</title>
+	<script type="text/javascript">
+		function delete_text1() {
+			var the_node=document.getElementById("firstP");
+			the_node.parentNode.removeChild(the_node);
+			}
+		function delete_text2() {
+			var the_node=document.getElementById("theBody");
+			the_node.removeChild(the_node.firstChild);
+		}
+		function delete_text3() {
+			var the_node=document.getElementsByTagName("p")[0];
+			the_node.parentNode.removeChild(the_node);
+		}
+		function delete_all() {
+			var the_node=document.getElementById("theBody");
+			while(the_node.firstChild)
+				the_node.removeChild(the_node.firstChild);
+		}		
+	</script>
+</head>
+<body id="theBody">
+<p id="firstP">Hello</p>
+How are you?
+<br>
+<p id="secondP">It's a nice day!</p>
+<button onclick="delete_text1()">Example 1</button>
+<button onclick="delete_text2()">Example 2</button>
+<button onclick="delete_text3()">Example 3</button>
+<button onclick="delete_all()">Delete All</button>
+</body>
+</html>

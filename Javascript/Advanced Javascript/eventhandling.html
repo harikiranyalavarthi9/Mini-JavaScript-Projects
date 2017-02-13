@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding Events</title>
+</head>
+<body id="theBody">
+<script type="text/javascript">
+		function do_something() {
+			alert("Page had loaded!");
+		}
+		function so_something() {
+			alert("Page had loaded!");
+		}
+			//window.load=do_something;
+			window.addEventListener("load",do_something);
+			window.addEventListener("load",so_something);
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color Guessing Game</title>
+<script type="text/javascript">
+	var guess_input_color;
+	var target;
+	var finished=false;
+	var guesses=0;
+	var start=new Date();
+	var color=["black", "blue", "brown", "cyan", "gold", "gray", "green", "magenta", "orange", "red", "yellow"];
+	var colors=color.sort();
+
+	function guess_game() {
+		var random_number=Math.random()*(colors.length-1);
+		var random_number_integer=Math.floor(random_number);
+		target=String(colors[random_number_integer]);
+		alert("The correct answer is: "+target);
+
+		while(!finished) {
+			guess_input_color=prompt("I am thinking of one of these colors:\n black, blue, brown, cyan, gold, gray, green, magenta, orange, red, yellow\n What color am I thinking of?").toLowerCase();
+			guesses+=1;
+			finished=check_guess();			
+			}
+		}
+	function check_guess() {
+		if(colors.indexOf(guess_input_color)==-1) {
+			alert("Sorry, I don't recognize your color. \n\n Please try again.");
+            return false;
+		}
+		if(target<guess_input_color){
+			alert("Sorry, your guess is not correct!\n\nHint: Your Color is alphabetically higher than mine.\n\n Please try again.");
+			return false;
+		}
+		if(target>guess_input_color) {
+			alert("Sorry, your guess is not correct!\n\nHint: Your Color is alphabetically lower than mine.\n\n Please try again.");
+			return false;
+		} else {
+			var myBody = document.getElementsByTagName("body")[0];
+				myBody.style.background = target;
+			var end=new Date();
+			var elapsed=end-start;
+			elapsed = elapsed/1000;
+			var seconds = Math.round(elapsed % 60);
+			showMessage();
+			 return true;
+		}
+		function showMessage() {
+				var secondsDelay=10;
+				setTimeout(function() {
+				alert("Congratulations! You have guessed the color!\n\nIt took you "+guesses+" guesses and "+seconds+" seconds to finish the game!\n\nYou can see the color in the background.");
+					},secondsDelay);
+			}
+	}
+</script>
+</head>
+<body onload=guess_game()>
+</body>
+</html>
