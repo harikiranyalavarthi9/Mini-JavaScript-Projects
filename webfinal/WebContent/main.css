@@ -1,0 +1,133 @@
+html{
+	height:65%;
+}
+body{           
+	font-family: Arial, Georgia, sans-serif;
+	font-size: 12pt;
+	line-height: 1em;
+	height:100%;
+	background:#4C0000;
+	}
+h1 {
+ 	color: #000000;
+	font: 30px  Georgia, Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+#nav  > ul > li {
+    display: inline;
+}
+#nav  ul {
+    margin-left: 10px;
+}
+#nav  > ul > li > a {
+    background-color: #F2F5A9;
+    color: #4E004E;
+    padding: 5px 10px;
+    font-weight:bold;
+    border-right: solid #5A246D 15px;
+}
+
+
+a {
+	 color: #4E004E;;
+}
+
+a:hover {
+	color: #FF0066;
+	}
+span{
+	font-weight: bold;
+	font-size:20px;
+	color: #009900;
+}
+#main{
+	clear: right;
+	width:100%;
+	float: right;
+	background: #660000;
+	height:100%;
+	}	
+.mainimg{
+	padding-top:10px;
+	width:325px; 
+	height:325px;
+	float: left;
+	
+} 
+#main  p{
+	font-size:20px;
+	color:#FFFFFF;
+	text-align: center;
+	line-height: 2.25em;
+}	
+
+#header{
+	 	height: 9em;
+		background:#4C0000;
+		}
+#header h1{
+	text-align: center; 
+	padding-top:18px;
+	color: #009900;
+	font: 36px  Georgia, Arial, sans-serif;
+	font-weight: bold;
+} 
+#header p{
+	text-align: center; 
+	color: #FFCCCC;
+	font: 22px  Georgia, Arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: lowercase;
+} 
+ #navigation
+	{
+		
+		background: #8F0000;
+		height: 1.75em;
+		padding-top: 10px;
+		padding-bottom: 40px;
+		width:auto;
+		margin-left: 0px;
+		}
+#navigation > ul > li
+		{
+			display: inline-block;
+		}
+		#navigation > ul > li > a
+		{
+			display: inline-block;
+			padding: 10px 10px;
+			letter-spacing: 0.06em;
+			text-decoration: none;
+			font-size: 12px;
+			color: #A3FF85;
+			outline: 0;
+		}
+		#navigation > ul > li > a:hover {
+			color: #6600CC;
+		}
+		
+		#navigation li.active a
+		{
+			background: #db3b5d;
+			border-radius: 10px;
+			color: #FFF;
+		}
+		
+		#navigation li.corner{
+		float:right;
+		}
+		
+#date{
+	float:right;
+    color: #A3FF85;
+}
+#hello{
+		color: #A3FF85;
+}
+#cnt{
+	float:right;
+	color: #A3FF85;
+}
