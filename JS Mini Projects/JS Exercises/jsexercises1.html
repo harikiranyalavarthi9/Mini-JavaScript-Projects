@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Exercises</title>
+	<script type="text/javascript">
+		var months=["January","february","March","April","May","June","July","August","September","October","November","December"];
+		var date=new Date();
+		var day=date.getDate();
+		var monthIndex=date.getMonth();
+		var year=date.getFullYear();
+		var hour=date.getHours();
+		document.write(months[monthIndex]+' '+day+' '+year);
+		if((hour>6)&&(hour<12))
+			alert("Good Morning!");
+		if((hour>12)&&(hour<16))
+			alert("Good Afternoon!");
+		if((hour>16)&&(hour<24))
+			alert("Good Evening!");
+		var x=document.lastModified;
+		document.write("\nFile Last Modified at "+x);
+		window.status = "Some text in the status bar!!";
+	</script>
+</head>
+<body>
+<p id="demo"></p>
+</body>
+</html>
