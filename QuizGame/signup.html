@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="style3.css" rel="stylesheet"/>
+</head>
+<body>
+<nav>
+  <ul>
+    <li style="float:left" class="active"><a href="index.html"><i><b style="font-size:25px"><u>IQ</u>uiz</a></b></i></li>
+    <li style="float:right"><a href="login.html"><b>LogIn</b></a></li>
+    <li style="float:right">
+      <a href="categories.html"><b>Categories</b><span class="caret"></span></a>
+      <div>
+        <ul>
+		  <li><a href="history.php"><b>History</b></a></li>
+		  <li><a href="music.php"><b>Music</b></a></li>
+          <li><a href="politics.php"><b>Politics</b></a></li>
+          <li><a href="sports.php"><b>Sports</b></a></li>
+          <li><a href="space.php"><b>Space</b></a></li>
+        </ul>
+      </div>
+    </li>
+    <li style="float:right"><a href="index.html"><b>Home</b></a></li> 
+  </ul>
+</nav>
+<form action="index.html" method="get">
+
+<table align = "center">
+<h1 align="center">SignUp</h1>
+<tr>
+<td> First Name: </td> <td><input type="text" size="24"/> </td><br>
+</tr>
+
+<tr>
+<td> Last Name: </td> <td><input type="text" size="24"/> </td><br>
+</tr>
+
+<tr>
+<td> E-mail Id: </td> <td><input type="text" size="24"/> </td><br>
+</tr>
+
+<tr>
+<td> Phone Number: </td> <td><input type="text" size="24"/> </td><br>
+</tr>
+
+<tr>
+<td> Password: </td> <td><input type="password" size="24"/> </td><br>
+</tr>
+<tr>
+<td> Gender: </td> 
+<td>
+
+<select id="gender">
+  <option value = "Male">Male</option>
+  <option value = "Female">Women</option>
+</select>
+</td>
+</tr>
+</table>
+<br>
+<div align="center">
+<input type = "submit" value = "Submit">
+</div>
+</form>
+</body>
+</html>
